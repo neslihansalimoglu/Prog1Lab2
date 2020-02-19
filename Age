@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Age{
+	public static void main (String []args){
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("\nEnter the current year : ");
+		int currentYear = input.nextInt();
+
+		System.out.print("\nEnter your year of birth : ");
+		int birthday = input.nextInt();
+		
+    int age = currentyear - birthday;
+    
+		System.out.println("\n\nYour age is " + age);
+	}
+}
