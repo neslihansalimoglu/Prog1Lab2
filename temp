@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Temp{
+	public static void main(String[] args){
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter the temperature in °C for the first day : ");
+		int temp1 = input.nextInt();
+    
+    System.out.print("Enter the temperature in °C for the second day : ");
+		int temp2 = input.nextInt();
+    
+    System.out.print("Enter the temperature in °C for the third day : ");
+		int temp3 = input.nextInt();
+    
+    int average = (temp1 + temp2 + temp3)/3
+
+		System.out.println("The average temperature in the last three days is " + avarage);
+	}
+} 
