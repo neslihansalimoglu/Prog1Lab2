@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class BMIcalculator{
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		// input 
+		System.out.println("\nEnter your weight in pounds:");
+		double pounds = input.nextDouble();
+		
+		System.out.println("\nEnter you height in feet");
+		double feet = input.nextDouble();
+
+		// pounds to kilograms
+		final double kilograms = pounds / 2.2;
+
+		// feet to meters
+		final double meters = feet / 3.281;
+
+		// BMI formula
+		final double bmi = kilograms / Math.pow(meters, 2);
+
+		// Output 
+		System.out.println("\nYour weight is: " + kilograms + " kilograms");
+        System.out.println("\nYour height is: " + meters + " meters");
+        System.out.println("\nYour BMI is: " + bmi);
+	}
+}
